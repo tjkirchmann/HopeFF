@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar color="f1">
+        <ion-button color="light" align="left" size="small" (click)="logout()">Log Out</ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col text-center>
+                Welcome to Dashboard!
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col text-center>
+                Your Registered EmailID : {{userEmail}}
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+</ion-content>
+<ion-tabs>
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="profile" class="tab">
+            <ion-icon name="contact"></ion-icon>
+            <ion-label>Profile</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="play" class="tab">
+            <ion-icon name="play"></ion-icon>
+            <ion-label>Play</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="leaderboard" class="tab">
+            <ion-icon name="analytics"></ion-icon>
+            <ion-label>Leaderboard</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
+</ion-tabs>
